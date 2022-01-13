@@ -237,6 +237,7 @@ footer .navbar nav ul li a:hover, footer a:hover{
 
     .header-bg-2{
         height: 180px;
+        background-image: linear-gradient(to bottom, black, #e02529, yellow);
     }
 
     .siteLogo{
