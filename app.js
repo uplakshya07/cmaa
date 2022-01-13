@@ -61,7 +61,7 @@ function setTimer() {
         timer = null;
         document.getElementById("startCycle").innerHTML = `<i class="fa fa-play"></i>`;
     } else {
-        timer = setInterval(slide, 5000);
+        timer = setInterval(slide, 15000);
         document.getElementById("startCycle").innerHTML = `<i class="fa fa-pause"></i>`;
     }
     return false;
