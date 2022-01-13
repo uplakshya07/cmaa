@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e435d3a58e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>CMAA - Home</title>
+
+    <style>
+        /* Slideshow */
+        #slideshow {
+            width: 100%;
+            height: 40vw;
+            background-color: aliceblue;
+            background-image: url("assets/bg1.PNG");
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: center;
+            background-size: contain;
+            display: flex;
+            align-items: center;
+            -webkit-transition: background-image .8s;
+            -moz-transition: background-image .8s;
+            -o-transition: background-image .8s;
+            transition: background-image .8s ease-in-out;
+        }
+
+        #button {
+            width: 100%;
+            height: inherit;
+            opacity: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.8rem;
+            transition: .2s ease-in-out;
+            padding: 0 20px;
+        }
+
+        #button:hover {
+            opacity: .8;
+        }
+
+        #button span{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background: #100303b9;
+            color: #ffffff;
+            z-index: 9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="siteLogo">
+            <a href="index.html"><img src="assets/siteLogo.PNG" alt="" style="text-decoration: none;"></a> 
+        </div>
+        
+        <div class="site-title">
+            <div class="branding">
+                <h1><a href="index.html">CMAA</a></h1>
+                <p class="address">Chhattisgarh Martial Art & Kick-boxing Academy</p>
+            </div>
+
+            <div class="navbar">
+                <ul>
+                    <li><a href="/" id="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="advantages.html">Advantages</a></li>
+                    <li><a href="gallary.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-btn">
+                <button class="nav-btn">
+                    Menu<i class="fas fa-align-justify menu"></i>
+                </button>
+            </div>
+        </div>
+        <div class="header-bg-2"></div>
+    </header>
+
+    <div class="navbar header-nav">
+        <ul>
+            <li><a href="/" id="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="advantages.html">Advantages</a></li>
+            <li><a href="gallary.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="slideshow-container">
+        <div id="slideshow">
+            <div id="button">
+                <span href="#" id="prevBtn" onclick="return previousImage()"><i class="fa fa-angle-left"></i></span>
+                <span href="#" id="startCycle" onclick="return setTimer()"><i class="fa fa-play"></i></span>
+                <span href="#" id="nextBtn" onclick="return nextImage()"><i class="fa fa-angle-right"></i></span>
+            </div>
+        </div>
+        <!-- <div id="counter"></div> -->
+    </div>
+
+    <div class="main-container">
+        <div class="intro-container">
+            <h2>CHHATTISGARH MARTIAL ARTS & KICKBOXING ACADEMY</h2>
+            <p>
+                Chhattisgarh Martial Arts & Kickboxing Academy is a family oriented martial arts,Kickboxing and fitness
+                school, open to the public, and dedicated to making your experience enjoyable and satisfying. We believe
+                in strengthening the mind and body through self-discipline, fitness and awareness. At the Chhattisgarh
+                Martial Arts and Kickboxing Academy we offer more than martial arts. We believe in whole fitness; both
+                mind and body. By training at the Academy you will learn habits that will help develop a healthy
+                lifestyle and positive mental outlook. For those of you who don't have martial arts or fitness
+                experience we encourage you to come and watch our classes. We have different programs designed to
+                provide something for everyone so come now and find the healthier you today!
+                <br><br>
+                Whether you're interested in learning the power and grace of Martial Art & Kickboxing, the spiritual and
+                health benefits of Martial Art, or just getting in the best shape of your life, Chhattisgarh Martial Art
+                & Kickboxing Academy (CMAA) is the place for you. Start your journey to become a martial artist today
+                with our unique programs and talented instructors. we have focused on providing our members with a good
+                class, clean, safe, family friendly training environment.
+            </p>
+        </div>
+
+        <div class="videos">
+            <iframe src="https://www.youtube-nocookie.com/embed/wfqLhvUbnyE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/O2reGUUnsJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/BP2XiMfRI2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/GRJxa_tUDhg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/-litULOJpNg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="copyright">
+            <p>Copyright © <span id="date"></span> <a href="index.html">CMAA</a>, Inc. - All rights reserved.</p>
+            <p>Made with <i class="fa fa-heart"></i> by <a href="#">DigiMatix</a></p>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="advantages.html">Advantages</a></li>
+                    <li><a href="gallary.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
